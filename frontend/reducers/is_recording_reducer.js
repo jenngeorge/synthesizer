@@ -1,6 +1,6 @@
 import {TracksConstants} from '../actions/tracks_actions';
 
-const recording = (state = false, action) => {
+const recordingsReducer = (state = false, action) => {
   switch(action.type){
     case TracksConstants.START_RECORDING:
       return true;
@@ -11,4 +11,4 @@ const recording = (state = false, action) => {
   }
 };
 
-export default recording;
+export default recordingsReducer;
